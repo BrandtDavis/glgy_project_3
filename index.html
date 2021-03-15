@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title> Earthquakes </title>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Styles/generalStyle.css">
+    <link rel="stylesheet" href="/Styles/indexStyle.css">
+    <link rel="stylesheet"href="Styles/topbarstyle.css">
+</head>
+
+<body>
+    <div class="topbar">
+        <table>      
+          <tr>
+            <th class="active-th"><a href="index.html"><span class="active-a">Home</span></a></th>
+            <th><a href="earthquakeOverview.html"> Earthquake Overview </a></th>
+            <th><a href="earthquakeMonitoring.html"> Earthquake Monitoring </a></th>
+            <th><a href="seismicZones.html"> Seismic Zones </a></th>
+            <th><a href="References.html"> References </a></th>
+          </tr>
+        </table>
+      </div>
+
+
+      <div id="descriptionPopup" class="description" style="display: block;">
+        <h3> Welcome! </h3>
+        This website has been made for GLGY 301 at the University of Calgary
+        <br>
+        <br>
+        It will cover the topic of Earthquakes in the Cordillera
+        <br>
+        <br>
+        By clicking the button below, you will close this popup and you will have to relaod the page if you would 
+        like to see it again.
+        <br>
+        <button id="closedPopup" type="submit" onclick="closePopup()"> Close </button>
+      </div>
+
+    <div class="container">
+        <div class="q1">
+            <figure>
+                <figcaption>A view of damage caused by an earthquake - (Mikhail, 2018)</figcaption>
+            </figure>
+        </div>
+
+        <div class="q2">
+            <figure>
+                <figcaption>A close up of a seismograph - (Pixel, n.d.)</figcaption>
+            </figure>
+        </div>
+
+        <div class="q3">
+            <figure>
+                <figcaption>A view of the seismic zones of BC - (DeRosa, 2013)</figcaption>
+            </figure>
+        </div>
+
+        <div class="q4">
+            <figure>
+                <figcaption>Damage caused by a tsunami that was triggered by and earthquake - (Meissner, 2018)</figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+
+    <script>
+        function closePopup() {
+          document.getElementById("descriptionPopup").style.display = "none";
+
+        }
+      </script>
+</body>
+
+</html>
