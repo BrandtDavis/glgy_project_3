@@ -4,6 +4,11 @@ body {
     overflow-y: hidden;
 }
 
+h2{
+
+text-align: center;
+}
+
 .container{
     display: grid;
     grid-template-columns:20% 80%;
